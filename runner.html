@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HW3 Grader - Mocha Tests</title>
+    <link rel="stylesheet" href="node_modules/mocha/mocha.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+  </head>
+  <body>
+    <div id="target" hidden></div>
+    <div id="mocha"></div>    
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+
+    <script src="data.js"></script>
+
+    <!-- load code you want to test here -->
+    <script src="courses.js"></script>
+
+    
+    <script>mocha.setup('bdd');</script>
+    <!-- load your test files here -->
+    <script src="test/test.js"></script>
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
